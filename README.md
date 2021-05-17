@@ -51,7 +51,7 @@ yadm clone git@github.com:wookiee89/dotfiles.git
 
 ```
 
-### Usage
+## Usage
 
 If you are doing this for the first time or if you are using an existing repository that holds your dotfiles and want to add new ones, then follow these steps:
 
