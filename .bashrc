@@ -3,7 +3,7 @@ export OSH=/home/jayjain/.oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="agnoster"
+OSH_THEME="powerline-multiline"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -25,7 +25,7 @@ OSH_THEME="agnoster"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -50,6 +50,8 @@ HIST_STAMPS="yyyy-mm-dd"
 completions=(
   git
   composer
+  pip
+  pip3
   ssh
 )
 
@@ -68,6 +70,7 @@ aliases=(
 plugins=(
   git
   bashmarks
+  battery
 )
 
 source $OSH/oh-my-bash.sh
