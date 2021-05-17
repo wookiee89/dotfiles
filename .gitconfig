@@ -1,0 +1,11 @@
+[user]
+	name = Jay Jain
+	email = jay.r.jain@gmail.com
+
+[color]
+	ui = auto
+	
+[core]
+	editor = nano
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	pager = delta
