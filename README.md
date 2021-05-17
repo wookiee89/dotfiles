@@ -32,7 +32,7 @@ The secondary purpose of this repo is to show others how they can use [yadm](htt
 
 If you do not have **yadm** already installed, then feel free to use their instructions found [here](https://yadm.io/docs/install#osx), or follow mine below.
 
-I perfer to use [**asdf**](https://asdf-vm.com/#/core-manage-asdf) for managing these types of tools, and they luckily have this plugin, so all you do is:
+I prefer to use [**asdf**](https://asdf-vm.com/#/core-manage-asdf) for managing these types of tools, and they luckily have a yadm plugin, so all you have to do is:
 
 ```sh
 
@@ -42,5 +42,28 @@ asdf install yadm latest
 
 ```
 
+Then I will add my repo for yadm to manage my dotfiles
+
+```sh
+# Clone repo
+
+yadm clone git@github.com:wookiee89/dotfiles.git
+
+```
+
 ### Usage
 
+If you are doing this for the first time or if you are using an existing repository that holds your dotfiles and want to add new ones, then follow these steps:
+
+```sh
+
+# Add file
+# yadm add ~/.bashrc
+
+yadm add [dot file for yadm to manage]
+
+yadm commit -a
+
+yadm push
+
+```
