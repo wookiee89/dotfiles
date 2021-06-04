@@ -1,14 +1,20 @@
 #!/bin/bash
-set -ex
-
-echo "Foo.."
 
 cd $HOME
 
-echo "Installing Oh-My-Bash"
-sh -c "$(curl -fsSL https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-
-echo "Installing ASDF"
+echo -e "====Installing ASDF====\n"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
-echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
-echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
+
+echo -e "====Making Github Directory====\n"
+mkdir $HOME/github
+
+echo -e "==== Making Bitbucket Directory ====\n"
+mkdir $HOME/bitbucket
+
+echo -e "==== Cloning Github Repos ====\n"
+cd $HOME/github && git clone https://github.com/wookiee89/azure-resource-graph.git
+cd $HOME/github && git clone https://github.com/wookiee89/nodejs-helloworld.git
+
+echo -e "==== Installing Az CLI ====\n"
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
